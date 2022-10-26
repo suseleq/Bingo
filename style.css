@@ -44,13 +44,13 @@ body {
 
 @media screen and (max-width: 660px){
     .container {
-        max-height: 300px;
-        max-width: 300px;
+        max-height: 400px;
+        max-width: 400px;
         gap: 5px;
     }
     .tile{
-        width: 60px;
-        height: 60px;
-        font-size: 0.41rem;
+        width: 75px;
+        height: 75px;
+        font-size: 0.5rem;
     }
 }
