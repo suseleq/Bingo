@@ -1,4 +1,4 @@
-const hasla = [
+const keywords = [
     "Diss na PUT",
     "Proszę się nie spóźniać",
     "GE",
