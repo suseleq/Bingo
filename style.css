@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2e2d2d;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 700px;
+}
+
+.container .tiles-container {
+    height: 640px;
+    width: 640px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.tiles-container .tile,
+.tiles-container .free-space {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #545158;
+    border-radius: 3px;
+    background: #333333;
+    padding: 10px;
+}
+
+.tile {
+    cursor: pointer;
+}
+
+.tiles-container .tile.checked, 
+.tiles-container .free-space {
+    background: #23633d;
+}
+
+.reroll-button{
+    margin-top: 15px;
+    width: 150px;
+    height: 70px;
+    display: grid;
+    place-content: center;
+    border: 3px solid #545158;
+    background: #333333;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 660px){
+    .container{
+        max-height: 400px;
+        max-width: 600px;
+    }
+    .tiles-container {
+        max-height: 400px;
+        max-width: 400px;
+        gap: 5px;
+    }
+    .tiles-container .tile,
+    .tiles-container .free-space{
+        width: 75px;
+        height: 75px;
+        font-size: 0.5rem;
+    }
+    .reroll-button {
+        max-height: 50px;
+        max-width: 100px;
+        font-size: 0.7rem;
+        margin-top: 40px;
+    }
+}
